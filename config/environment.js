@@ -8,7 +8,7 @@ module.exports = function(environment) {
     locationType: 'auto',
     MAPBOX_KEY: process.env.MAPBOX_KEY,
     'mapbox-gl': {
-      accessToken: this.MAPBOX_KEY,
+      accessToken: process.env.MAPBOX_KEY,
     },
     EmberENV: {
       FEATURES: {
