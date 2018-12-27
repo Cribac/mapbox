@@ -7,6 +7,9 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     MAPBOX_KEY: process.env.MAPBOX_KEY,
+    'mapbox-gl': {
+      accessToken: this.MAPBOX_KEY,
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
