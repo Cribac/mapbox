@@ -9,6 +9,11 @@ module.exports = function(environment) {
     MAPBOX_KEY: process.env.MAPBOX_KEY,
     'mapbox-gl': {
       accessToken: process.env.MAPBOX_KEY,
+      map: {
+        style: 'mapbox://styles/mapbox/basic-v9',
+        zoom: 13,
+        center: [ -96.7969879, 32.7766642 ],
+      },
     },
     EmberENV: {
       FEATURES: {
