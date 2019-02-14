@@ -1,11 +1,3 @@
 <h3>Maps</h3>
-
-{{#mapbox-gl class="map-container" initOptions=(hash pitch=30) as |map|}}
-  {{map.on "click" (action "mapClicked")}}
-
-  {{#map.source options=(hash type="geojson" data=marker) as |source|}}
-    {{source.layer layer=(hash
-      type="circle"
-      paint=(hash circle-color="#007cbf" circle-radius=10))}}
-  {{/map.source}}
-{{/mapbox-gl}}
+{{#link-to 'maps.normal'}}A pretty basic map{{/link-to}}
+{{outlet}}
